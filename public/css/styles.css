@@ -1,0 +1,116 @@
+body {
+  /* background-image: url("images/dna_logo_new.svg"); */
+  background-color: #0a1c1e;
+  background-size: contain;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: right;
+  margin: 1em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.huge-text {
+  color: #2db1e0;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-align: left;
+  color: #2db1e0;
+}
+
+p {
+  font-size: 1.5rem;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.dna-logo {
+  margin: 1em;
+  padding-left: 4em;
+}
+
+.card1 {
+  text-align: center;
+  margin: 6em 4em 4em 6em;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(5px);
+}
+
+.token-box1 {
+  padding: 2em 4em;
+}
+
+.input-group {
+  padding: 20px 20px 10px 20px;
+}
+
+.btn {
+  margin: 0 1em 1em 0;
+}
+
+.box-item-rules {
+  padding: 10px;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 450px) {
+  body {
+    max-width: 100% !important;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  p {
+    font-size: 1em;
+    /* line-height: 1; */
+  }
+
+  .row {
+    margin: 0 auto;
+  }
+
+  .card1 {
+    margin: 0;
+  }
+
+  .dna-logo {
+    padding-top: 0em;
+    margin: 0 auto;
+  }
+
+  .token-box1 {
+    padding: 1em;
+  }
+
+  .logo1 {
+    max-width: 300px;
+    padding: 2em 0;
+  }
+}
