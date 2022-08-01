@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useWeb3React } from '@web3-react/core';
 import { InjectedConnector } from '@web3-react/injected-connector';
 import { Web3Provider } from '@ethersproject/providers';
@@ -6,6 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import Mint from './pages/Mint';
+
 import { networkId, networkIdHex } from 'config';
 
 export const injectedConnector = new InjectedConnector({});
@@ -28,10 +30,11 @@ const App = () => {
   }, [chainId, networkActive]);
 
   React.useEffect(() => {
-    injectedConnector.isAuthorized().then((isAuthorized) => {
-      if (isAuthorized && !networkError) activateNetwork(injectedConnector);
-    });
-  }, [activateNetwork, networkError]);
+    if (!networkActive)
+      injectedConnector.isAuthorized().then((isAuthorized) => {
+        if (isAuthorized && !networkError) activateNetwork(injectedConnector);
+      });
+  }, [activateNetwork, networkError, networkActive]);
 
   return (
     <>
@@ -47,7 +50,13 @@ const App = () => {
         pauseOnHover
         theme="colored"
       />
-      <Mint />
+      <div className="App">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Mint />} />
+          </Routes>
+        </Router>
+      </div>
     </>
   );
 };
