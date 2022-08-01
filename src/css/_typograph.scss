@@ -1,0 +1,32 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 60px;
+  line-height: 80px;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: $fontoverthere;
+  display: inline-block;
+}
+
+p {
+  font-size: 19px;
+  line-height: 29px;
+  color: #fff;
+  font-weight: 300;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+a:hover {
+  color: #000;
+  text-decoration: none;
+}

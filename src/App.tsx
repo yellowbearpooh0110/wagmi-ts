@@ -5,7 +5,7 @@ import { Web3Provider } from '@ethersproject/providers';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import Home from './Home';
+import Mint from './pages/Mint';
 import { networkId, networkIdHex } from 'config';
 
 export const injectedConnector = new InjectedConnector({});
@@ -47,7 +47,7 @@ const App = () => {
         pauseOnHover
         theme="colored"
       />
-      <Home />
+      <Mint />
     </>
   );
 };

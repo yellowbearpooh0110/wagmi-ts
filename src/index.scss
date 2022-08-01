@@ -1,18 +1,384 @@
-button {
-  display: inline-block;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
-  text-align: center;
-  text-decoration: none;
-  vertical-align: middle;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  border-radius: 0.25rem;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import "css/bootstrap.min.css";
+@import "css/variables", "css/base", "css/fonts", "css/icons", "css/typograph", "css/button";
+
+@media (max-width: 1537px) {
+  .membershipFeature {
+    .col-xxl-4 {
+      flex: 0 0 auto;
+      width: 33.33333333%;
+    }
+
+    .col-xxl-8 {
+      flex: 0 0 auto;
+      width: 66.66666667%;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 30px;
+  }
+
+  .navbar .navbar-nav .nav-item:not(:first-child) {
+    margin-left: 42px;
+  }
+
+  .navbar {
+    padding: 25px 0;
+  }
+
+  .banner__img a {
+    left: 42%;
+    width: 16%;
+  }
+
+  .about {
+    padding: 328px 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 46px;
+    line-height: 60px;
+  }
+
+  .membership__text h4 {
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+
+  .membership__text {
+    max-width: 380px;
+  }
+
+  .membership__text.nova {
+    max-width: 300px;
+  }
+
+  .membership__text.supernova {
+    max-width: 480px;
+  }
+
+  .frm__group .diagonal {
+    padding: 1.8px;
+  }
+
+  .footer p {
+    font-size: 46px;
+    line-height: 45px;
+  }
+
+  .contactus {
+    padding: 25% 0 56%;
+  }
+
+  .membershipFeature .container {
+    padding: 0 100px;
+  }
+
+  .navbar .container-fluid {
+    margin: 0 100px;
+  }
+
+  .mmbrAns__feature {
+    width: 160px;
+
+    &__head {
+      width: 100%;
+    }
+  }
+
+  .mmbrAns__feature.nove,
+  .mmbrAns__feature.supernova {
+    width: 160px;
+
+    .mmbrAns__feature__head {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1536px) {
+  .membershipFeature {
+    .col-xxl-4 {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+
+    .col-xxl-8 {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  }
+
+  .memberFeature__right {
+    justify-content: center;
+  }
+
+  .mmbrAns__feature.nove,
+  .mmbrAns__feature.supernova {
+    width: 190px;
+
+    .mmbrAns__feature__head {
+      width: 100%;
+    }
+  }
+
+  .member__text {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .feature__obj1 {
+    top: -185px;
+  }
+}
+
+@media (max-width: 1535px) {
+  .about__title {
+    text-align: center;
+  }
+
+  .contactus {
+    padding: 18% 0 54%;
+  }
+}
+
+@media (max-width: 1439px) {
+  .feature__obj1,
+  .feature__obj2 {
+    display: none;
+  }
+
+  .contactus {
+    padding: 7% 0 54%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar .navbar-nav .nav-item:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    margin-bottom: 20px;
+  }
+
+  .about {
+    padding: 200px 0;
+  }
+
+  .themembership .theme__header {
+    margin-bottom: 50px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .contactus__text h2 {
+    line-height: 75px;
+    margin-bottom: 65px;
+  }
+
+  .footer {
+    padding: 100px 0 140px;
+  }
+  .privilegesMain__box {
+    width: 354px;
+    max-width: 100%;
+  }
+  .memberFeature__right {
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: auto;
+    justify-content: flex-start;
+    & > div {
+      flex: 0 0 auto;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .about__title {
+    margin-bottom: 50px;
+  }
+  .contactus {
+    background: none;
+  }
+  .about p {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto 20px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+  .membership__text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .themembership .theme__header {
+    margin-bottom: 100px;
+  }
+
+  .memberbtn {
+    text-align: center;
+  }
+
+  .membership__mintv {
+    height: auto;
+  }
+
+  .themembership {
+    .row {
+      margin-bottom: 100px;
+
+      &:nth-child(odd) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  .themembership .row:nth-child(odd) .membership__text h4 {
+    text-align: center;
+  }
+
+  .membershipFeature {
+    padding: 120px 0 160px;
+  }
+
+  .contactus__text {
+    max-width: 100%;
+    margin-left: auto;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  .navbar .container-fluid {
+    margin: unset;
+  }
+
+  .membershipFeature .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer p {
+    font-size: 34px;
+    line-height: 34px;
+    margin: 80px 0 50px;
+  }
+  .about h1 span,
+  .theme__header h2 span,
+  .membership__text h4,
+  .member__text h2 span,
+  .contactus__text h2 span {
+    text-shadow: 0 10px 40px rgba(255, 255, 255, 0.98);
+  }
+}
+
+@media (max-width: 576px) {
+  .theme__header {
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .member__text h2 {
+    font-size: 24px;
+  }
+  .theme__header h2 span {
+    padding-left: 83px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 28px;
+    line-height: 50px;
+  }
+  .about h1 span:last-child {
+    margin-top: 0;
+  }
+  .about p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .about {
+    padding: 110px 0;
+  }
+  .membership__text h4 {
+    line-height: 45px;
+    font-size: 24px;
+  }
+
+  .memberbtn {
+    svg {
+      width: 200px;
+    }
+  }
+  .member__text h2 {
+    font-size: 21px;
+    line-height: 38px;
+  }
+  .membershipFeature {
+    padding: 35px 0 100px;
+  }
+  .contactus__text h2 {
+    line-height: 52px;
+    margin-bottom: 65px;
+  }
+  .contactus__text p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .contactus__form .formsendbtn button,
+  .footer form button {
+    svg {
+      width: 200px;
+    }
+  }
+  .footer__logo {
+    img {
+      max-width: 250px;
+    }
+  }
+  .footer p {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 42px 0 30px;
+  }
+  .navbar-brand {
+    img {
+      max-width: 180px;
+    }
+  }
+  .navbar {
+    padding: 15px 0;
+  }
 }

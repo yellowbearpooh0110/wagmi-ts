@@ -68,6 +68,7 @@ contract WagmiClub is
         uint256 tokenId = 0;
         totalSuperNova += mintAmount;
         _safeMint(msg.sender, tokenId + totalSuperNova);
+        delete whitelistSuperNova;
     }
 
     function mintNova(uint256 mintAmount) public payable {
@@ -87,6 +88,7 @@ contract WagmiClub is
         uint256 tokenId = 9;
         totalNova += mintAmount;
         _safeMint(msg.sender, tokenId + totalNova);
+        delete whitelistNova;
     }
 
     function mintAurora(uint256 mintAmount) public payable {
@@ -106,6 +108,7 @@ contract WagmiClub is
         uint256 tokenId = 99;
         totalAurora += mintAmount;
         _safeMint(msg.sender, tokenId + totalAurora);
+        delete whitelistAurora;
     }
 
     function mintGenesis(uint256 mintAmount) public payable {
@@ -125,6 +128,7 @@ contract WagmiClub is
         uint256 tokenId = 449;
         totalGenesis += mintAmount;
         _safeMint(msg.sender, tokenId + totalGenesis);
+        delete whitelistGenesis;
     }
 
     function isSuperNova(address _user) public view returns (bool) {

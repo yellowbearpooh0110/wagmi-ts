@@ -1,0 +1,77 @@
+.navbar {
+  padding: 40px 0;
+  .container-fluid {
+    margin: 0 170px;
+  }
+  .navbar-nav {
+    .nav-item {
+      &:not(:first-child) {
+        margin-left: 60px;
+      }
+
+      .nav-link {
+        font-size: 34px;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 0 3px 20px rgba($color: #ffffff, $alpha: 1);
+
+        &.membership {
+          text-shadow: 0 3px 20px rgba($color: #2deccf, $alpha: 1);
+        }
+
+        &.feature {
+          text-shadow: 0 3px 20px rgba($color: #e85ae3, $alpha: 1);
+        }
+
+        &.contact {
+          text-shadow: 0 3px 20px rgba($color: #ffaa22, $alpha: 1);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 30px;
+  }
+
+  .navbar .navbar-nav .nav-item:not(:first-child) {
+    margin-left: 42px;
+  }
+
+  .navbar {
+    padding: 25px 0;
+  }
+
+  .navbar .container-fluid {
+    margin: 0 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar .navbar-nav .nav-item:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar .container-fluid {
+    margin: unset;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    img {
+      max-width: 180px;
+    }
+  }
+  .navbar {
+    padding: 15px 0;
+  }
+}

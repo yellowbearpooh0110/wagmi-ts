@@ -1,0 +1,48 @@
+.btntheme {
+  position: relative;
+  background: #da1d00;
+  display: inline-block;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 80px solid #da1d00;
+    border-right: 80px solid transparent;
+    width: 0;
+    z-index: 1;
+  }
+}
+
+.theme-btn {
+  background: #fff;
+  color: #da1d00;
+  background: #000;
+  font-family: $fontMain;
+  font-size: 40px;
+  line-height: 43px;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 0;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  padding: 0px 89px;
+  min-height: 55px;
+  margin: 0px;
+  font-weight: 700;
+  transition: 0.5s ease;
+  padding-top: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    border-top: 74px solid #fff;
+    border-right: 74px solid transparent;
+    width: 0;
+    z-index: 2;
+  }
+}
