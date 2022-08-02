@@ -1,4 +1,4 @@
-export const contractAddress = '0xD3DcA829e3453a23EBc55D9cF6b98f53c5239145';
+export const contractAddress = '0x70e98Ef4d981DD1abb6B1EF1487019A374EeA0ef';
 
 export const networkId = 4;
 export const networkIdHex = '0x4';
