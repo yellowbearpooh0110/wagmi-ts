@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @import "css/bootstrap.min.css";
 @import "css/variables", "css/base", "css/fonts", "css/icons", "css/typograph", "css/button";
+@import "components/About/styles", "components/Banner/styles", "components/Contactus/styles",
+  "components/Feature/styles", "components/Footer/styles", "components/Membership/styles", "components/Navbar/styles";
 
 @media (max-width: 1537px) {
   .membershipFeature {

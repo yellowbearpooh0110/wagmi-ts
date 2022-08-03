@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import logoImg from 'img/logo.svg';
-import './styles.scss';
+// import './styles.scss';
 
 const Navbar: React.FC = () => {
   return (

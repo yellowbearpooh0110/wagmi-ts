@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import './styles.scss';
+// import './styles.scss';
 import featureHeadImg from 'img/feature-head.png';
 import featurePointImg from 'img/feature-point.png';
 

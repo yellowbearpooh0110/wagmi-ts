@@ -3,7 +3,7 @@ import { useWeb3React } from '@web3-react/core';
 import { Contract } from '@ethersproject/contracts';
 import { toast } from 'react-toastify';
 
-import './styles.scss';
+// import './styles.scss';
 import genesisImg from 'img/genesis.png';
 import auroraImg from 'img/aurora.png';
 import novaImg from 'img/nova.png';
