@@ -410,7 +410,7 @@ const Membership: React.FC = () => {
                   type="video/mp4"
                 />
               </video>
-              <button className="memberbtn d-lg-none">
+              <button className="memberbtn d-lg-none" onClick={handleMintNova}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="263.071"
@@ -469,7 +469,10 @@ const Membership: React.FC = () => {
                   type="video/mp4"
                 />
               </video>
-              <button className="memberbtn d-lg-none">
+              <button
+                className="memberbtn d-lg-none"
+                onClick={handleMintSuperNova}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="263.071"
