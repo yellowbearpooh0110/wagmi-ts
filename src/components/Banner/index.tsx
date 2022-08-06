@@ -8,7 +8,7 @@ const Banner: React.FC = () => {
     <section>
       <div className="banner__main">
         <div className="video">
-          <video className="tv_video" autoPlay muted>
+          <video className="tv_video" playsInline autoPlay muted>
             <source
               src="https://mywagmi.com/video/video.mp4"
               // src="test.mp4"

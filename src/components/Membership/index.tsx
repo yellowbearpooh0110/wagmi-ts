@@ -189,6 +189,7 @@ const Membership: React.FC = () => {
                 <img src={genesisImg} alt="genesis" />
               </div>
               <video
+                playsInline
                 muted
                 autoPlay
                 className="membervideo"
@@ -251,6 +252,7 @@ const Membership: React.FC = () => {
                 <img src={auroraImg} alt="aurora" />
               </div>
               <video
+                playsInline
                 muted
                 autoPlay
                 className="membervideo"
@@ -399,6 +401,7 @@ const Membership: React.FC = () => {
                 <img src={novaImg} alt="nova" />
               </div>
               <video
+                playsInline
                 muted
                 autoPlay
                 className="membervideo"
@@ -458,6 +461,7 @@ const Membership: React.FC = () => {
                 <img src={supernovaImg} alt="supernova" />
               </div>
               <video
+                playsInline
                 muted
                 autoPlay
                 className="membervideo"
